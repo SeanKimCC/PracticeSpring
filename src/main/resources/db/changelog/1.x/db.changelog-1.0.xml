@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <!-- Please see: http://www.liquibase.org/manual/column -->
+
+  <changeSet id="1.0" author="seankim">
+
+    <!--<createTable tableName="USER_PROFILE">-->
+    <!--<column name="ID" type="bigint" autoIncrement="true">-->
+    <!--<constraints primaryKey="true" nullable="false" />-->
+    <!--</column>-->
+    <!--<column name="USER_NAME" type="VARCHAR(80)"/>-->
+    <!--<column name="PASSWORD" type="VARCHAR(80)"/>-->
+    <!--<column name="D.O.B." type="datetime"/>-->
+    <!--<column name="EMAIL_ADDRESS" type="varchar(255)"/>-->
+
+    <!--<column name="CREATED_ON" type="datetime">-->
+    <!--<constraints nullable="false" />-->
+    <!--</column>-->
+    <!--<column name="LAST_MODIFIED_ON" type="dateTime">-->
+    <!--<constraints nullable="true" />-->
+    <!--</column>-->
+    <!--</createTable> -->
+
+    <createTable tableName="STANDING">
+      <column name="ID" type="bigint" autoIncrement="true">
+        <constraints primaryKey="true" nullable="false" />
+      </column>
+      <column name="CITY" type="varchar(255)"></column>
+      <column name="TEAM_NAME" type="varchar(255)"></column>
+      <column name="WON" type="bigint"></column>
+      <column name="LOST" type="bigint"></column>
+    </createTable>
+
+  </changeSet>
+
+</databaseChangeLog>
